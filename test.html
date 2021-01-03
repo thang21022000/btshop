@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" >
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+
+    <title>BOOTSTRAP</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="nav-item nav-link" data-toggle="modal" data-target="#aboutModal"><i class="navbar-brand fas fa-user-ninja"></i><span class="navbar-text">Thang</span></a>
+
+            <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="navbar-toggler-icon"></i></a>
+            <div class="navbar-collapse collapse" id="navbar-menu">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="#home">Home</a>
+
+                    <div class="dropdown">
+                        <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="project-dropdown" href="#projects">Projects</a>
+                        <div class="dropdown-menu project-dropdown">
+                            <h5 class="dropdown-header"><i class="fab fa-html5"></i>HTML</h5>
+                            <a href="#projectAnchor" class="dropdown-item small">HTML1</a>
+                            <a href="#projectAnchor" class="dropdown-item small">HTML2</a>
+                            <a href="#projectAnchor" class="dropdown-item small">HTML3</a>
+
+                            <div class="dropdown-divider"></div>  
+
+                            <h5 class="dropdown-header"><i class="fab fa-css3-alt"></i>CSS</h5>
+                            <a href="#projectAnchor" class="dropdown-item small">CSS1</a>
+                            <a href="#projectAnchor" class="dropdown-item small">CSS2</a>
+                            <a href="#projectAnchor" class="dropdown-item small">CSS3</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="" href="shop.html">Shop</a>
+                        <div class="dropdown-menu shop-dropdown">
+                            <h5 class="dropdown-header">T-Shirts</h5>
+                            <a href="shop.html" class="dropdown-item small">Long T-shirts</a>
+                            <a href="shop.html" class="dropdown-item small">Classic T-shirts</a>
+                            <a href="shop.html" class="dropdown-item small">V-neck T-shirts</a>
+
+                            <div class="dropdown-divider"></div> 
+
+                            <h5 class="dropdown-header">Jeans</h5>
+                            <a href="shop.html" class="dropdown-item small">Jeans Pants</a>
+                            <a href="shop.html#" class="dropdown-item small">Jeans Jacket</a>
+
+                            <div class="dropdown-divider"></div> 
+
+                            <h5 class="dropdown-header">Hat</h5>
+                            <a href="shop.html" class="dropdown-item small">Snapback</a>
+                            <a href="shop.html" class="dropdown-item small">Dad Hat</a>
+                            <a href="shop.html" class="dropdown-item small">Beanie</a>
+                            
+                        </div>
+                    </div>
+                    
+                    <a class="nav-item nav-link" href="#contactAnchor"><i class="fas fa-envelope"></i>Contract</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal about me-->
+
+    <div class="modal fade" id="aboutModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">About Me</div>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="/image/134374870_1608666692652411_9003973062114764862_n.jpg" width="150" alt="">
+                    <p>About Me <br>
+                        I'm 20. <br>
+                        I'm student <br>
+                        I'm single (no longer) <br>
+                        I'm not attractive but not ugly 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider-->
+    <div class="carousel" id="mainSlide">
+        <div class="carousel-inner">
+            <img class="w-100 d-block" src="/image/simple.jpg" alt="">
+        </div>       
+    </div>
+
+    <!-- content-->
+    <div class="container-fluid p-5">
+        <h1 class="bg-light p-5" id="projectAnchor">Project</h1>
+        
+        <!-- card-->
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="/image/large.png" alt="">
+                <div class="card-body">
+                    <h6 class="card-title">HTML1</h6>
+                    <p class="card-text">This is my first HTML project</p>
+                    <a href="#" class="btn btn-danger">Check</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img class="card-img-top" src="/image/free-html-editor.jpg" alt="">
+                <div class="card-body">
+                    <h6 class="card-title">HTML1</h6>
+                    <p class="card-text">This is my first HTML project</p>
+                    <a href="#" class="btn btn-danger">Check</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="/image/preview.png" style="height: 44%;" alt="">
+                <div class="card-body">
+                    <h6 class="card-title">HTML1</h6>
+                    <p class="card-text">This is my first HTML project</p>
+                    <a href="#" class="btn btn-danger">Check</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="container-fluid bg-dark p-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 class="text-secondary">Home</h6>
+                <hr>
+                <p>
+                        <a href="#">HOME</a>
+                    <br><a href="#">Project</a>
+                    <br><a href="#">Contact</a>
+                </p>
+            </div>
+
+            <div class="col-sm-3">
+                <h6 class="text-secondary">PROJECT</h6>
+                <hr>
+                <p>
+                        <a href="#">HTML1</a>
+                    <br><a href="#">HTML2</a>
+                    <br><a href="#">HTML3</a>
+                </p>
+            </div>
+
+            <div class="col-sm-3">
+                <h6 class="text-secondary">SHOP</h6>
+                <hr>
+                <p>
+                        <a href="#">T-Shirt</a>
+                    <br><a href="#">Jeans</a>
+                    <br><a href="#">Hat</a>
+                </p>
+            </div>
+
+            <div class="col-sm-3" id="contactAnchor">
+                <h6 class="text-secondary">CONTACT</h6>
+                <hr>
+                <p>
+                    <i class="fas fa-envelope"></i> Email:
+                    <br><i class="fab fa-facebook"></i> Facebook:
+                    <br><i class="fab fa-instagram"></i> Instagram:
+                </p>
+            </div>
+        </div>
+        <p class="text-center"> Thang &copy; 2020</p>
+    </footer>
+</body>
+</html>

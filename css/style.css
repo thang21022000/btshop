@@ -1,0 +1,22 @@
+.navbar{
+    background-color: transparent;
+    box-shadow: 0 1px 20px #eaeaea;
+    transition: background-color 1s ease 0s;
+}
+
+.navbar.solid{
+    transition: background-color 1s ease 0s;
+}
+
+footer a, footer p{
+    color: white;
+    font-size: 0.8rem;
+}
+
+.gold-star{
+    color: gold;
+}
+
+.black-star{
+    color: #cccccc;
+}
