@@ -10,7 +10,6 @@
 
 footer a, footer p{
     color: white;
-    font-size: 0.8rem;
 }
 
 .gold-star{
@@ -19,4 +18,15 @@ footer a, footer p{
 
 .black-star{
     color: #cccccc;
+}
+
+.card-img-top{
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.w-100{
+    height: 623px; 
+    object-fit: cover;
 }
